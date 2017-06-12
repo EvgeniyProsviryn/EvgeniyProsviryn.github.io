@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Landing Page</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <style>
+        body { opacity: 0; overflow-x: hidden; } 
+        html { background-color: #fff; } 
+        
+        .services h2:first-letter {
+         color: #f1c152;
+        }
+        .the-team .title:first-letter{
+         color: #f1c152;
+        }
+        .products .owl-dot{
+            width: 15px;
+            height: 15px;
+            background: #fff;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 10px;
+            margin-top: 50px;
+            
+        }
+        .products .owl-dot.active{
+            background-color: #333;
+        }
+        
+        .carousel-wrapper .owl-dot{
+            width: 15px;
+            height: 15px;
+            background: #fff;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 10px;
+            margin-top: 50px;
+            
+        }
+        .owl-dot.active{
+            background-color: #f1c152;
+        }
+        
+    </style>
+
+</head>
+<body class="galleryOn servicesOn aboutOn the-teamOn productsOn brandsOn contactOn">
+   <div class="accentColor hidden">#f1c152</div>
+    <nav id="my-menu">
+	    <ul>
+            <li class="selected homeM"><a href="#">Home</a></li>
+            <li class="galleryM"><a href="#">Gallery</a></li>
+            <li class="servicesM"><a href="#">Services</a></li>
+            <li class="aboutM"><a href="#">About</a></li>
+            <li class="contactM"><a href="#">Contact</a></li>
+        </ul>
+	</nav>
+	<header>
+	    <div class="header-wrapper" id="my-header" style="background:url('img/wall.jpg') center no-repeat; background-size: cover">
+            <div class="showbox">
+              <div class="loader">
+                <svg class="circular" viewBox="25 25 50 50">
+                  <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+                </svg>
+              </div>
+            </div>
+	        <div class="header-menu">
+	            <div class="container">
+	                <div class="row">
+	                    <div class="col-md-2 col-xs-6">
+	                        <div class="logo"><img src="img/logo.svg" width="100%" alt=""></div>
+	                    </div>
+	                    <div class="col-md-10 col-xs-6">
+	                        <ul class="mymenu">
+                                <li class="contactM">contact <span class="line"></span></li>
+                                <li class="aboutM">about <span class="line"></span></li>
+                                <li class="servicesM">services <span class="line"></span></li>
+                                <li class="galleryM">gallery <span class="line"></span></li>
+	                            <li class="homeM">home <span class="line"></span></li>
+	                        </ul>
+	                        <a href="#my-menu" class="hamburger hamburger--spin hidden-md hidden-lg">
+	                            <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+	                        </a>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-md-4 col-sm-6 col-xs-12 hidden-xs">
+                        <div class="header-box">
+                        <div class="flex-center">
+	                    <h1 class="header-title"><span class="color" style="color: #f1c152">mobile</span> ready</h1>
+	                    <p class="header-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+	                    </div>
+	                    </div>
+	                </div>
+	                <div class="col-md-4 col-md-offset-4 col-sm-6 col-xs-12  mobile">
+	                    <form action="">
+                            <div class="tb-wrapp">
+	                            <div class="connect-box">
+	                                <div class="connect-header">
+	                                    <span class="connect-title" style="color: #f1c152">Connect</span>
+	                                    <br>
+	                                    <p>width us</p>
+	                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+	                                </div>
+	                                <div class="inp-wrapp">
+	                                <input type="text" class="connect-name" placeholder="Name">
+	                                <input type="text" class="connect-name" placeholder="Email">
+	                                <textarea placeholder="Message"></textarea>
+	                                <a href="" class="button" style="background-color: #f1c152;">Send</a>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </form>
+	                </div>
+	                <i class="fa fa-anchor animated bounce" aria-hidden="true"></i>
+	            </div>
+	        </div>
+	    </div>
+	      
+	</header>
+	<section class="gallery" style="background-color: #f0cb35;
+background-image: url('https://www.transparenttextures.com/patterns/checkered-light-emboss.png');">
+	    <div class="container">
+	        <div class="row">
+                <div class="title-wr">
+	                <h1 class="mod-title">gallery</h1>
+	            </div>
+	            <div class="gallery-box">
+	            <a href="img/gallery/1.jpg" class="mfp-gallery">
+	            <div class="col-md-6 col-sm-6 big">
+	                <img src="img/gallery/1.jpg" width="100%" alt="">
+	                <i class="fa fa-play-circle" aria-hidden="true"></i>
+	            </div>
+	            </a>
+	            <a href="img/gallery/2.jpg" class="mfp-gallery">
+	            <div class="col-md-3 col-sm-3">
+	                <img src="img/gallery/2.jpg" width="100%" alt="">
+	            </div>
+                </a>
+                <a href="img/gallery/3.jpg" class="mfp-gallery">
+	            <div class="col-md-3 col-sm-3">
+	                <img src="img/gallery/3.jpg" width="100%" alt="">
+	            </div>
+                </a>
+                <a href="img/gallery/4.jpg" class="mfp-gallery">
+	            <div class="col-md-3 col-sm-3">
+	                <img src="img/gallery/4.jpg" width="100%" alt="">
+	            </div>
+	            </a>
+	            <a href="img/gallery/5.jpg" class="mfp-gallery">
+	            <div class="col-md-3 col-sm-3">
+	                <img src="img/gallery/5.jpg" width="100%" alt="">
+	            </div>
+	            </a>
+	            <a href="img/gallery/6.jpg" class="mfp-gallery">
+	            <div class="col-md-3 col-sm-3">
+	                <img src="img/gallery/6.jpg" width="100%" alt="">
+	            </div>
+	            </a>
+	            <a href="img/gallery/7.jpg" class="mfp-gallery">
+	            <div class="col-md-3 col-sm-3">
+	                <img src="img/gallery/7.jpg" width="100%" alt="">
+	            </div>
+                </a>
+                <a href="img/gallery/8.jpg" class="mfp-gallery">
+	            <div class="col-md-3 col-sm-3">
+	                <img src="img/gallery/8.jpg" width="100%" alt="">
+	            </div>
+	            </a>
+	            <a href="img/gallery/9.jpg" class="mfp-gallery">
+	            <div class="col-md-3 col-sm-3">
+	                <img src="img/gallery/9.jpg" width="100%" alt="">
+	            </div>
+	            </a>
+	            </div>  
+	        </div>
+	    </div>
+	</section>
+	<section class="services" style="background: url('img/services.jpg') center no-repeat; background-size: cover">
+	    <div class="filter"></div>
+	    <div class="container">
+	        <div class="row">
+	            <div class="title-wr">
+	                <h1 class="mod-title" style="">services</h1>
+	            </div>
+	            <div class="serv-box">
+	                <div class="col-md-4 col-sm-6">
+	                    <div class="service-logo">
+	                        <img src="img/layers.svg" width="100%" alt="">
+	                    </div>
+	                    <h2 class="service-title">analytics</h2>
+	                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
+	                </div>
+	                <div class="col-md-4 col-sm-6">
+	                    <div class="service-logo">
+	                        <img src="img/settings.svg" width="100%" alt="">
+	                    </div>
+	                    <h2 class="service-title">marketing</h2>
+	                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
+	                </div>
+	                <div class="col-md-4 col-sm-6">
+	                    <div class="service-logo">
+	                        <img src="img/monitor.svg" width="100%" alt="">
+	                    </div>
+	                    <h2 class="service-title">Design</h2>
+	                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
+	                </div>
+	                <div class="col-md-4 col-sm-6">
+	                    <div class="service-logo">
+	                        <img src="img/code.svg" width="100%" alt="">
+	                    </div>
+	                    <h2 class="service-title">Programming</h2>
+	                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
+	                </div>
+	                <div class="col-md-4 col-sm-6">
+	                    <div class="service-logo">
+	                        <img src="img/line-chart.svg" width="100%" alt="">
+	                    </div>
+	                    <h2 class="service-title">SEO</h2>
+	                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
+	                </div>
+	                <div class="col-md-4 col-sm-6">
+	                    <div class="service-logo">
+	                        <img src="img/support.svg" width="100%" alt="">
+	                    </div>
+	                    <h2 class="service-title">support</h2>
+	                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+	<section class="about" style="background-color: #f0cb35;
+background-image: url('https://www.transparenttextures.com/patterns/checkered-light-emboss.png');">
+	    <div class="container">
+	        <div class="row">
+                
+	            <div class="col-lg-8 col-md-12 anim1">
+	                <img src="img/about.jpg" width="100%" alt="">
+	            </div>
+	            <div class="col-lg-4 col-md-12 anim2">
+	                <div class="title-wr">
+	                    <h1 class="mod-title" style="">About Us</h1>
+	                </div>
+	                <p>
+	                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+	                </p>
+	                <a href="" class="button" style="background-color: #fff;">Send</a>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+	<section class="the-team" style="background: url('img/team.jpg') center no-repeat; background-size: cover">
+        <div class="filter"></div>
+	    <div class="title-wr">
+	       <h1 class="mod-title" style="">Our team</h1>
+	    </div>
+	   <div class="container">
+	       <div class="row">
+               <div class="col-md-12 carousel-wrapper">
+               <div class="owl-carousel slider1">
+	               <div class="item">
+	                   <div class="photo-wrapp">
+	                       <img src="img/team(2).jpg" width="100%" alt="">
+	                   </div>
+	                   <p class="title">Manuel Milani</p>
+	                   <p class="position">Director</p>
+                   </div>
+	               <div class="item">
+	                   <div class="photo-wrapp">
+	                       <img src="img/funny_people_faces2_03.jpg" width="100%" alt="">
+	                   </div>
+	                   <p class="title">Robert Gardner</p>
+	                   <p class="position">WebDesigner</p>
+	               </div>
+	               <div class="item">
+	                   <div class="photo-wrapp">
+	                       <img src="img/nathan1.jpg" width="100%" alt="">
+	                   </div>
+	                   <p class="title">Finlay Byrne</p>
+	                   <p class="position">WebDesigner</p>
+	               </div>
+	               <div class="item">
+	                   <div class="photo-wrapp">
+	                       <img src="img/article-2557079-1B65996200000578-297_306x423.jpg" width="100%" alt="">
+	                   </div>
+	                   <p class="title">Jay Cole</p>
+	                   <p class="position">WebDesigner</p>
+	               </div>
+	               <div class="item">
+	                   <div class="photo-wrapp">
+	                       <img src="img/martin-steiner-mitarbeiter-ksa.jpg" width="100%" alt="">
+	                   </div>
+	                   <p class="title">Jose Greer</p>
+	                   <p class="position">WebDesigner</p>
+	               </div>
+	           </div>   
+	           </div>
+	       </div>
+	   </div>
+	</section>
+	<section class="products" style="background-color: #f0cb35;
+background-image: url('https://www.transparenttextures.com/patterns/checkered-light-emboss.png');">
+	    <div class="title-wr">
+	       <h1 class="mod-title" style="">products</h1>
+	       <p class="products-text">There are many variations of passages <br>
+of Lorem Ipsum available</p>
+	    </div>
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-md-12">
+	                <div class="products-wrapper">
+	                    <div class="owl-carousel slider2">
+	                        <div class="item">
+	                            <div class="prodImg-wrapp">
+	                               <a href="img/stil-interer-ofis-delovoi-tsentr-krasivyi-vid-okno-gorod-vys.jpg" title="Into The Blue" ><img src="img/stil-interer-ofis-delovoi-tsentr-krasivyi-vid-okno-gorod-vys.jpg" width="100%" alt=""></a>
+	                            </div>
+	                        </div>
+	                        <div class="item">
+	                            <div class="prodImg-wrapp">
+	                               <a href="img/stil-interer-ofis-delovoi-tsentr-krasivyi-vid-okno-gorod-vys.jpg" title="Into The Blue" ><img src="img/stil-interer-ofis-delovoi-tsentr-krasivyi-vid-okno-gorod-vys.jpg" width="100%" alt=""></a>
+	                            </div>
+	                        </div>
+	                        <div class="item">
+	                            <div class="prodImg-wrapp">
+	                               <a href="img/stil-interer-ofis-delovoi-tsentr-krasivyi-vid-okno-gorod-vys.jpg" title="Into The Blue" ><img src="img/stil-interer-ofis-delovoi-tsentr-krasivyi-vid-okno-gorod-vys.jpg" width="100%" alt=""></a>
+	                            </div>
+	                        </div>
+	                        <div class="item">
+	                            <div class="prodImg-wrapp">
+	                               <a href="img/stil-interer-ofis-delovoi-tsentr-krasivyi-vid-okno-gorod-vys.jpg" title="Into The Blue" ><img src="img/stil-interer-ofis-delovoi-tsentr-krasivyi-vid-okno-gorod-vys.jpg" width="100%" alt=""></a>
+	                            </div>
+	                        </div>
+	                        <div class="item">
+	                            <div class="prodImg-wrapp">
+	                               <a href="img/stil-interer-ofis-delovoi-tsentr-krasivyi-vid-okno-gorod-vys.jpg" title="Into The Blue" ><img src="img/stil-interer-ofis-delovoi-tsentr-krasivyi-vid-okno-gorod-vys.jpg" width="100%" alt=""></a>
+	                            </div>
+	                        </div>
+	                        <div class="item">
+	                            <div class="prodImg-wrapp">
+	                               <a href="img/stil-interer-ofis-delovoi-tsentr-krasivyi-vid-okno-gorod-vys.jpg" title="Into The Blue" ><img src="img/stil-interer-ofis-delovoi-tsentr-krasivyi-vid-okno-gorod-vys.jpg" width="100%" alt=""></a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+	<section class="brands" style="background: url('img/team.jpg') center no-repeat; background-size: cover">
+        <div class="filter"></div>
+	    <div class="title-wr">
+	       <h1 class="mod-title" style="">Brands</h1>
+	    </div>
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-md-12">
+                    <div class="navigation">
+	                    <div class="prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+	                    <div class="next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+	                </div>
+	                <div class="ow-container slider3 owl-carousel">
+	                    <div class="br-photo"><img src="img/brands/Bass_logo.svg.png" width="100%" height="100%" alt=""></div>
+	                    <div class="br-photo"><img src="img/brands/Bass_logo.svg.png" width="100%" height="100%" alt=""></div>
+	                    <div class="br-photo"><img src="img/brands/Bass_logo.svg.png" width="100%" height="100%" alt=""></div>
+	                    <div class="br-photo"><img src="img/brands/Bass_logo.svg.png" width="100%" height="100%" alt=""></div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+	<section class="contact" style="background-color: #f0cb35;
+background-image: url('https://www.transparenttextures.com/patterns/checkered-light-emboss.png');">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 anim1">
+                    <div class="title-wr">
+	                    <h1 class="mod-title" style="">Contact</h1>
+	                </div>
+	                <p class="contact-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin </p>
+	                <form action="" class="contact-form">
+	                    <input type="text" class="contact-name" placeholder="Name" required>
+	                    <input type="text" class="contact-email" placeholder="Email" required>
+	                    <textarea class="contact-area" placeholder="Message" required></textarea>
+	                    <button class="button">Send</button>
+	                </form>
+                </div>
+                <div class="col-md-6 anim2">
+                    <div class="map">
+                    <div class="filter"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4865.1352519763705!2d27.5557927689728!3d53.905462916372485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb75a53cfe613d1df!2z0JHQtdC70L7RgNGD0YHRgdC60LjQuSDQs9C-0YHRg9C00LDRgNGB0YLQstC10L3QvdGL0Lkg0LDRgNGF0LjQsi3QvNGD0LfQtdC5INC70LjRgtC10YDQsNGC0YPRgNGLINC4INC40YHQutGD0YHRgdGC0LLQsA!5e1!3m2!1sru!2sru!4v1497293493955" width="100%" height="100%" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</section>
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
