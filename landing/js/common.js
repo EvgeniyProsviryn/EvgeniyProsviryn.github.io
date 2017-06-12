@@ -27,6 +27,7 @@ $(function() {
 		closeOnContentClick: false,
 		closeBtnInside: false,
 		mainClass: 'mfp-with-zoom mfp-img-mobile',
+        fixedContentPos: false,
 		image: {
 			verticalFit: true
 			
@@ -137,6 +138,8 @@ $(function() {
         }
     }
     });
+    
+
    $('.navigation .prev').click(function() {
         $(".slider3").trigger('prev.owl.carousel');
    })
@@ -148,4 +151,91 @@ $(function() {
        $(this).fadeOut(500);
    })
     
+   
+    
+    if ($(window).width() > 1200) {
+        $(".homeM").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".header-wrapper").offset().top
+    }, 700);
+    });
+    
+    $(".galleryM").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".gallery").offset().top - $(".header-menu").height()
+    }, 700);
+    });
+    
+    $(".servicesM").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".services").offset().top - $(".header-menu").height()
+    }, 700);
+    });
+    
+     $(".aboutM").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".about").offset().top - $(".header-menu").height()
+    }, 700);
+    });
+    
+    $(".contactM").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".contact").offset().top - $(".header-menu").height()
+    }, 700);
+    });    
+    $(".fa-anchor").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".gallery").offset().top - $(".header-menu").height()
+    }, 700);
+    });
+    }
+    else{
+      $(".homeM").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".header-wrapper").offset().top
+    }, 700);
+    });
+    
+    $(".galleryM").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".gallery").offset().top
+    }, 700);
+    });
+    
+    $(".servicesM").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".services").offset().top
+    }, 700);
+    });
+    
+     $(".aboutM").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".about").offset().top
+    }, 700);
+    });
+    
+    $(".contactM").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".contact").offset().top
+    }, 700);
+    });    
+    $(".fa-anchor").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".gallery").offset().top
+    }, 700);
+    });  
+    }
+    
+    $(".header-menu").animated("fadeInDown");
+    $(".header-box").animated("jello");
+    $(".connect-box").animated("jello");
+    $(".mod-title").animated("fadeIn");
+    $(".gallery-box").animated("fadeIn");
+    $(".serv-box").animated("fadeIn");
+    $(".anim1").animated("fadeInLeft");
+    $(".anim2").animated("fadeInRight");
+    $(".slider1").animated("fadeIn");
+    $(".products-text").animated("flipInX");
+    $(".slider2").animated("fadeIn");
+    $(".slider3").animated("fadeIn");
 });
