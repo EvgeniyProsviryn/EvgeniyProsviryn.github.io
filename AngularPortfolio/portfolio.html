@@ -1,0 +1,19 @@
+<div class="container projectWrapp">
+    <div class="row">
+       
+        <div class="col-md-3 col-sm-6 repeated-item" ng-repeat="object in portfolio">
+            <a href="{{object.link}}">
+                <div class="projectBox" style="background: url('{{object.imageLink}}') no-repeat; background-size: cover">
+                    <div class="title">
+                        <div class="title-text">
+                            {{object.title}}
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        
+        
+    </div>
+</div>
